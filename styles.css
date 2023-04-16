@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --col-primary-blue: hsl(225, 100%, 94%);
+    --col-primary-bright-blue: hsl(245, 75%, 52%);
+
+    --col-neutral-pblue: hsl(225, 100%, 98%);
+    --col-neutral-dsblue: hsl(224, 23%, 55%);
+    --col-neutral-dblue: hsl(223, 47%, 23%);
+
+    --fw-normal: 500;
+    --fw-medium: 700;
+    --fw-bold: 900;
+
+    --ff-redhat: 'Red Hat Display', sans-serif;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--col-primary-blue);
+    font-family: var(--ff-redhat);
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    max-width: 28rem;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px 5px hsla(224, 23%, 55%, 0.2);
+}
+
+.main-img img {
+    width: 100%;
+    background-position: center;
+}
+
+.order-container {
+    padding: 3rem 3rem 0;
+}
+
+.order-summary {
+    margin: 0 auto;
+}
+
+.order-summary h1 {
+    /* margin-top: 2.5rem; */
+    font-weight: var(--fw-bold);
+    font-size: 1.8em;
+    padding-bottom: 1.5rem;
+    color: var(--col-neutral-dblue);
+}
+
+.order-summary p {
+    color: var(--col-neutral-dsblue);
+    max-width: 25rem;
+    font-size: 18px;
+}
+
+.plan {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    text-align: left;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    padding: 1.8rem;
+    background-color: var(--col-neutral-pblue);
+    gap: 1.2rem;
+}
+
+.plan-main {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.plan p:first-of-type {
+    font-weight: var(--fw-medium);
+    font-size: 1.2em;
+}
+
+.plan p:last-of-type {
+    color: var(--col-neutral-dsblue);
+    font-size: 1.1em
+}
+
+.plan a {
+    margin-left: auto;
+    color: var(--col-primary-bright-blue);
+    font-weight: var(--fw-medium);
+}
+
+.plan a:hover {
+    color: hsla(245, 75%, 52%, 0.8);
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.1rem 5rem;
+    width: 80%;
+    text-align: center;
+    font-weight: var(--fw-medium);
+    border: none;
+    background-color: var(--col-primary-bright-blue);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1em;
+    box-shadow: 0 10px 20px hsla(245, 75%, 52%, 0.3);
+}
+
+button:hover {
+    background-color: hsla(245, 75%, 52%, 0.8);
+    cursor: pointer;
+    /* box-shadow: 5px; */
+}
+
+.buttons p {
+    font-weight: var(--fw-medium);
+    color: var(--col-neutral-dblue);
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.buttons p:hover {
+    cursor: pointer;
+}
